@@ -78,19 +78,17 @@ div#google_translate_element {\n\
 }\n\
 ');
   var nt_sel = [
-    "title",									/* The page title */
+    "title",									/* Page title (browser tab title) */
     "header",									/* Top nav (black bg) */
     "#header",									/* Header bar (blue bg) */
     "nav",										/* Side nav */
-    "case-details-header-row",					/* "Case #1234 Details", timeouts, etc */
     ".stream-items content-meta-description",	/* "Comment on wall" etc */
     ".stream-items case-core-top-right",		/* Timestamp, sentiment, etc */
+    "case-details-header-row",					/* "Case #1234 Details" and locked/timeout bars */
+    ".stream-items .item-action-bar",			/* Action bar under each item */
     "#right-pane .detail-top-info-pane",		/* Case details metadata */
-    ".detail-bottom-buttons",					/* "Update Case" bar */
-    ".detail-bottom-info-pane .owner-pane #reply_tab .reply-action-row",
-    ".stream-items .item-action-bar",
-    "#case-info-owner",
-
+    "#right-pane #case-info-owner",    			/* "Post a Reply"/"Add a Note" forms */
+    "#right-pane .detail-bottom-buttons"		/* "Update Case" bar */
   ];
   for (var this_sel in nt_sel) {
     var notrans = document.querySelectorAll(nt_sel[this_sel]);
@@ -98,4 +96,4 @@ div#google_translate_element {\n\
       notrans[idx].setAttribute("class",notrans[idx].getAttribute("class") + " notranslate");
     }
   }
-},5000);
+},6000);
