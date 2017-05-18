@@ -78,17 +78,17 @@ div#google_translate_element {\n\
 }\n\
 ');
   var nt_sel = [
-    "title",					/* Page title (browser tab title) */
-    "header",					/* Top nav (black bg) */
-    "#header",					/* Header bar (blue bg) */
-    "nav",					/* Side nav */
-    ".stream-items .content-meta-description",	/* "Comment on wall" etc */
-    ".stream-items .item-top-right",    	/* Timestamp, sentiment, etc */
-    ".case-details-header-row",			/* "Case #1234 Details" and locked/timeout bars */
-    ".stream-items .item-action-bar",		/* Action bar under each item */
-    "#right-pane .detail-top-info-pane",	/* Case details metadata */
-    "#right-pane #case-info-owner",    		/* "Post a Reply"/"Add a Note" forms */
-    "#right-pane .detail-bottom-buttons"	/* "Update Case" bar */
+    "title",                                    /* Page title (browser tab title) */
+    "header",                                   /* Top nav (black bg) */
+    "#header",                                  /* Header bar (blue bg) */
+    "nav",                                      /* Side nav */
+    ".stream-items .content-meta-description",  /* "Comment on wall" etc */
+    ".stream-items .item-top-right",            /* Timestamp, sentiment, etc */
+    ".case-details-header-row",                 /* "Case #1234 Details" and locked/timeout bars */
+    ".stream-items .item-action-bar",           /* Action bar under each item */
+    "#right-pane .detail-top-info-pane",        /* Case details metadata */
+    "#right-pane #case-info-owner",             /* "Post a Reply"/"Add a Note" forms */
+    "#right-pane .detail-bottom-buttons"        /* "Update Case" bar */
   ];
   for (var this_sel in nt_sel) {
     var notrans = document.querySelectorAll(nt_sel[this_sel]);
