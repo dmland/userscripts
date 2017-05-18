@@ -13,6 +13,7 @@
 
 function DL_log(output) {
   GM_log("%c" + GM_info.script.name + ": " + output, "padding: 3px 0px 2px 4px; border-left: 4px solid;");
+}
 
 window.setTimeout(function() {
   'use strict';
