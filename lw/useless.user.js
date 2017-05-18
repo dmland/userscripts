@@ -11,9 +11,12 @@
 // ==/UserScript==
 /* jshint multistr: true */
 
+function DL_log(output) {
+  GM_log("%c" + GM_info.script.name + ": " + output, "padding: 3px 0px 2px 4px; border-left: 4px solid;");
+
 window.setTimeout(function() {
   'use strict';
-  console.log("i am here!");
+  DL_log("Ryan is a frikkin' genius!");
   //
 
 },3000);
