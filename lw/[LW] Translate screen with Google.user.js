@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         [LW] Translate screen with Google
-// @namespace    http://land.and.us.com/greasemonkey
+// @namespace    https://github.com/dmland/userscripts/
 // @version      1.0
 // @description  desc
 // @author       Dave Land
