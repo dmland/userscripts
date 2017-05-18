@@ -33,6 +33,11 @@ window.setTimeout(function() {
   document.body.appendChild(gts);
   document.body.appendChild(gti);
   GM_addStyle('\n\
+/* Accomodate the "Google Translated to …" bar at the top */\n\
+body > .skiptranslate ~ div#main {\n\
+  height: calc(100% - 40px);\n\
+}\n\
+\n\
 div#google_translate_element {\n\
   position: absolute;\n\
   right: 250px;\n\
