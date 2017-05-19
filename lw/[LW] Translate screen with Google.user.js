@@ -90,10 +90,18 @@ div#google_translate_element {\n\
     "#right-pane #case-info-owner",             /* "Post a Reply"/"Add a Note" forms */
     "#right-pane .detail-bottom-buttons"        /* "Update Case" bar */
   ];
+  DL_log("adding notranslates");
   for (var this_sel in nt_sel) {
     var notrans = document.querySelectorAll(nt_sel[this_sel]);
+    if (notrans.length == 0) {
+      if ( window.confirm("Unable to blacklist elements from translation due to slow page render.\n\"document.querySelectorAll('" + nt_sel[this_sel] + "')\"\nCanceling will result in incorrect elements being translated.\n\nReload to try again?") ) {
+        location.reload();
+      } else {
+        break;
+      }
+    }
     for (var idx=0; idx<notrans.length; idx++) {
       notrans[idx].setAttribute("class",notrans[idx].getAttribute("class") + " notranslate");
     }
   }
-},6000);
+},12000);
